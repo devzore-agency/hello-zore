@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ========================= -->
+    <!-- FAVICON & APP ICONS -->
+    <!-- ========================= -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Theme -->
+    <meta name="theme-color" content="#030303" />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+
+    <!-- Devicon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+
+    <!-- ========================= -->
+    <!-- ORGANIZATION SCHEMA -->
+    <!-- ========================= -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "DevZore",
+        "url": "https://devzore.com",
+        "logo": "https://devzore.com/logo.png",
+        "founder": {
+          "@type": "Person",
+          "name": "Muhammad Shoukat"
+        },
+        "description": "DevZore is a software development agency based in Islamabad, Pakistan, offering web development, mobile app development, MERN stack, and SaaS solutions.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Islamabad",
+          "addressCountry": "PK"
+        },
+        "areaServed": "Worldwide",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer service",
+          "email": "hellodevzore@gmail.com",
+          "telephone": "+92-334-8004300",
+          "availableLanguage": ["English", "Urdu"]
+        },
+        "sameAs": [
+          "https://github.com/muhammadshoukat2030",
+          "https://www.linkedin.com/in/dev-zore-833893418",
+          "https://www.instagram.com/devz.ore/"
+        ]
+      }
+    </script>
+
+    <!-- ========================= -->
+    <!-- WEBSITE SCHEMA -->
+    <!-- ========================= -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "DevZore",
+        "url": "https://devzore.com",
+        "description": "Software development agency in Islamabad — web, mobile apps, MERN stack and SaaS.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "DevZore"
+        }
+      }
+    </script>
+  </head>
+
+  <body style="background-color: #030303;">
+    <div id="root"></div>
+
+    <noscript>
+      <div
+        style="
+          text-align: center;
+          color: white;
+          padding: 20px;
+        "
+      >
+        DevZore is a global software development company offering MERN stack
+        development, web development, mobile apps, and SaaS solutions.
+        Please enable JavaScript to view the full site.
+      </div>
+    </noscript>
+
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

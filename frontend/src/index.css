@@ -1,0 +1,223 @@
+@import "tailwindcss";
+
+/* ── 60-30-10 Design System ── */
+/* 60% = Light bg (#fafafa, #ffffff) */
+/* 30% = Dark elements (#111827) */
+/* 10% = Purple accent (#7c3aed) */
+
+@layer utilities {
+
+  /* LIGHT MODE (default) */
+  :root {
+    /* 60% - Backgrounds */
+    --bg-primary: #ffffff;
+    --bg-secondary: #fafafa;
+    --bg-subtle: #f3f4f6;
+    --bg-card: #ffffff;
+
+    /* 30% - Text & Dark Elements */
+    --text-primary: #111827;
+    --text-secondary: #374151;
+    --text-muted: #6b7280;
+    --text-faint: #9ca3af;
+    --border-color: #e5e7eb;
+    --border-subtle: #f3f4f6;
+
+    /* 10% - Purple Accent */
+    --accent: #7c3aed;
+    --accent-hover: #6d28d9;
+    --accent-bg: #ede9fe;
+    --accent-text: #5b21b6;
+
+    /* Nav & Footer (30% dark) */
+    --nav-bg: #111827;
+    --nav-text: rgba(255,255,255,0.6);
+    --nav-text-hover: #ffffff;
+    --footer-bg: #111827;
+
+    /* Brand */
+    --color-brand-purple: #7c3aed;
+    --color-dark-bg: #ffffff;
+    --color-card-bg: #ffffff;
+  }
+
+  /* DARK MODE */
+  .dark {
+    /* 60% - Dark Backgrounds */
+    --bg-primary: #030303;
+    --bg-secondary: #0a0a0a;
+    --bg-subtle: #111111;
+    --bg-card: #0a0a0a;
+
+    /* 30% - Light Text */
+    --text-primary: #ffffff;
+    --text-secondary: #e5e7eb;
+    --text-muted: #9ca3af;
+    --text-faint: #6b7280;
+    --border-color: rgba(255,255,255,0.08);
+    --border-subtle: rgba(255,255,255,0.04);
+
+    /* 10% - Purple Accent (same) */
+    --accent: #7c3aed;
+    --accent-hover: #8b5cf6;
+    --accent-bg: rgba(124,58,237,0.15);
+    --accent-text: #a78bfa;
+
+    /* Nav & Footer */
+    --nav-bg: #050505;
+    --nav-text: rgba(255,255,255,0.55);
+    --nav-text-hover: #ffffff;
+    --footer-bg: #050505;
+
+    /* Brand */
+    --color-brand-purple: #8b5cf6;
+    --color-dark-bg: #030303;
+    --color-card-bg: #0a0a0a;
+  }
+}
+
+/* ── Global Base Styles ── */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  * {
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+}
+
+/* ── Custom Components ── */
+@layer components {
+
+  /* Cards */
+  .velocity-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .velocity-card:hover {
+    border-color: rgba(124, 58, 237, 0.4);
+    box-shadow: 0 0 24px rgba(124, 58, 237, 0.08);
+  }
+
+  /* Gradient Text */
+  .gradient-text {
+    background: linear-gradient(to right, var(--text-primary), var(--accent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Light mode gradient text */
+  .light .gradient-text,
+  :root:not(.dark) .gradient-text {
+    background: linear-gradient(to right, #111827, #7c3aed);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Section Tag Pill */
+  .section-tag-pill {
+    display: inline-block;
+    background: var(--accent-bg);
+    color: var(--accent-text);
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 14px;
+    border-radius: 50px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  /* Primary Button */
+  .btn-primary {
+    background: var(--accent);
+    color: #ffffff;
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+
+  .btn-primary:hover {
+    background: var(--accent-hover);
+  }
+
+  /* Secondary Button */
+  .btn-secondary {
+    background: transparent;
+    color: var(--text-primary);
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    border: 1.5px solid var(--border-color);
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .btn-secondary:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  /* Theme Toggle Button */
+  .theme-toggle {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.12);
+    padding: 6px 12px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 11px;
+    color: rgba(255,255,255,0.6);
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+
+  .theme-toggle:hover {
+    background: rgba(255,255,255,0.12);
+    color: white;
+  }
+}
+
+/* ── Scrollbar ── */
+.scrollbar-hide-standard::-webkit-scrollbar {
+  width: 4px;
+}
+.scrollbar-hide-standard::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scrollbar-hide-standard::-webkit-scrollbar-thumb {
+  background: rgba(124, 58, 237, 0.2);
+  border-radius: 10px;
+}
+.scrollbar-hide-standard::-webkit-scrollbar-thumb:hover {
+  background: rgba(124, 58, 237, 0.5);
+}
+
+/* ── Smooth Theme Transition ── */
+.theme-transition * {
+  transition: background-color 0.3s ease,
+              color 0.3s ease,
+              border-color 0.3s ease,
+              box-shadow 0.3s ease !important;
+}

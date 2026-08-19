@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xsi:schemaLocation="
+          http://www.sitemaps.org/schemas/sitemap/0.9
+          http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
+          http://www.google.com/schemas/sitemap-image/1.1
+          http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd">
+
+  <!-- HOMEPAGE -->
+  <url>
+    <loc>https://devzore.com/</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+    <image:image>
+      <image:loc>https://devzore.com/logo.png</image:loc>
+      <image:title>DevZore — Software Development Agency</image:title>
+      <image:caption>DevZore builds web apps, mobile apps and SaaS platforms worldwide</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ABOUT -->
+  <url>
+    <loc>https://devzore.com/about</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://devzore.com/logo.png</image:loc>
+      <image:title>About DevZore — Software Development Agency</image:title>
+      <image:caption>Learn about DevZore, our team, mission and values</image:caption>
+    </image:image>
+  </url>
+
+  <!-- CONTACT -->
+  <url>
+    <loc>https://devzore.com/contact</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- ALL SERVICES -->
+  <url>
+    <loc>https://devzore.com/allservices</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://devzore.com/logo.png</image:loc>
+      <image:title>All Software Development Services — DevZore</image:title>
+      <image:caption>Web, mobile, SaaS and e-commerce development services</image:caption>
+    </image:image>
+  </url>
+
+  <!-- BLOG -->
+  <url>
+    <loc>https://devzore.com/blog</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- WEB DEVELOPMENT — Priority 1.00 -->
+  <url>
+    <loc>https://devzore.com/web-development</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+    <image:image>
+      <image:loc>https://devzore.com/weldonpaint.webp</image:loc>
+      <image:title>Custom Web Development Services — React Next.js Node.js</image:title>
+      <image:caption>Fast, SEO-optimised web applications built worldwide</image:caption>
+    </image:image>
+  </url>
+
+  <!-- MERN STACK — Priority 1.00 -->
+  <url>
+    <loc>https://devzore.com/mern-stack-development</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+    <image:image>
+      <image:loc>https://devzore.com/logo.png</image:loc>
+      <image:title>MERN Stack Development Company — MongoDB Express React Node.js</image:title>
+      <image:caption>Full-stack JavaScript development worldwide</image:caption>
+    </image:image>
+  </url>
+
+  <!-- SAAS DEVELOPMENT -->
+  <url>
+    <loc>https://devzore.com/saas-product-development</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.97</priority>
+    <image:image>
+      <image:loc>https://devzore.com/logo.png</image:loc>
+      <image:title>SaaS Product Development — Build Scalable SaaS Platform</image:title>
+      <image:caption>Multi-tenant SaaS with Stripe billing and analytics dashboards</image:caption>
+    </image:image>
+  </url>
+
+  <!-- STARTUP MVP -->
+  <url>
+    <loc>https://devzore.com/startup-mvp</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.97</priority>
+    <image:image>
+      <image:loc>https://devzore.com/logo.png</image:loc>
+      <image:title>Startup MVP Development — Launch in 8 to 14 Weeks</image:title>
+      <image:caption>Investor-ready MVPs for startups worldwide</image:caption>
+    </image:image>
+  </url>
+
+  <!-- MOBILE APP -->
+  <url>
+    <loc>https://devzore.com/mobile-apps</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://devzore.com/logo.png</image:loc>
+      <image:title>Mobile App Development — React Native iOS Android</image:title>
+      <image:caption>Cross-platform mobile apps for iOS and Android</image:caption>
+    </image:image>
+  </url>
+
+  <!-- E-COMMERCE -->
+  <url>
+    <loc>https://devzore.com/ecommerce</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://devzore.com/logo.png</image:loc>
+      <image:title>Custom E-Commerce Development — Stripe JazzCash Easypaisa</image:title>
+      <image:caption>High-converting custom online stores and marketplaces</image:caption>
+    </image:image>
+  </url>
+
+  <!-- REACT DEVELOPMENT -->
+  <url>
+    <loc>https://devzore.com/reactdevelopment</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.93</priority>
+    <image:image>
+      <image:loc>https://devzore.com/qatar_tourist_agency.webp</image:loc>
+      <image:title>React.js Development Services — React 19 TypeScript Next.js</image:title>
+      <image:caption>Expert React development with Lighthouse 95+ scores</image:caption>
+    </image:image>
+  </url>
+
+  <!-- BACKEND API -->
+  <url>
+    <loc>https://devzore.com/backend-api</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.92</priority>
+    <image:image>
+      <image:loc>https://devzore.com/logo.png</image:loc>
+      <image:title>Backend and API Development — Node.js Express GraphQL</image:title>
+      <image:caption>Scalable REST and GraphQL APIs built for production</image:caption>
+    </image:image>
+  </url>
+
+  <!-- UI UX DESIGN -->
+  <url>
+    <loc>https://devzore.com/ui-ux-design</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://devzore.com/logo.png</image:loc>
+      <image:title>UI UX Design Services — Figma Design Agency</image:title>
+      <image:caption>User-centered Figma design that converts and retains</image:caption>
+    </image:image>
+  </url>
+
+  <!-- MAINTENANCE -->
+  <url>
+    <loc>https://devzore.com/maintenance</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://devzore.com/maintenance.webp</image:loc>
+      <image:title>Website Maintenance and Support Services</image:title>
+      <image:caption>Security updates, monitoring, bug fixes and monthly reports</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+  <loc>https://devzore.com/seo-services</loc>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://devzore.com/digital-marketing</loc>
+  <priority>0.90</priority>
+</url>
+
+  <!-- PRIVACY POLICY -->
+  <url>
+    <loc>https://devzore.com/privacy-policy</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.30</priority>
+  </url>
+
+  <!-- TERMS AND CONDITIONS -->
+  <url>
+    <loc>https://devzore.com/terms-and-conditions</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.30</priority>
+  </url>
+
+</urlset>

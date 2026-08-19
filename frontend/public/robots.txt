@@ -1,0 +1,57 @@
+# =====================================================
+# DevZore.com — robots.txt
+# Updated: 2026-08-07
+# =====================================================
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Block non-content paths
+Disallow: /api/
+Disallow: /_next/
+Disallow: /node_modules/
+Disallow: /.env
+Disallow: /.git/
+
+# Crawl delay for aggressive bots
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Crawl-delay: 10
+
+# Allow key search engines full access
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# AI crawlers — allow for AI search indexing
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+# Sitemap location
+Sitemap: https://devzore.com/sitemap.xml
